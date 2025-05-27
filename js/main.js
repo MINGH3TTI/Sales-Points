@@ -3,6 +3,12 @@ let currentCategory = null;
 let currentBusiness = null;
 let isHandlingPopState = false;
 
+const categoryTitles = {
+    centro: 'SETOR CENTRO',
+    redentora: 'SETOR REDENTORA',
+    cabines: 'CABINES'
+};
+
 function openAddressInMaps(address) {
     const encodedAddress = encodeURIComponent(address);
     
@@ -63,6 +69,7 @@ function showCategory(category) {
     const currentCategoryEl = document.getElementById('current-category');
 
     businessList.innerHTML = '<div class="loading">Carregando estabelecimentos...</div>';
+    pageTitle.innerText = categoryTitles[category] || 'Setor';
 
     setTimeout(() => {
         businessList.innerHTML = '';
