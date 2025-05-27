@@ -139,10 +139,6 @@ body {
     background-position: center;
 }
 
-.business-photo.placeholder {
-    background: linear-gradient(45deg, #667eea, #764ba2);
-}
-
 .category-grid {
     display: flex;
     flex-direction: column;
