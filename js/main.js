@@ -1,6 +1,7 @@
 let currentPage = 'home';
 let currentCategory = null;
 let currentBusiness = null;
+let isHandlingPopState = false;
 
 function openAddressInMaps(address) {
     const encodedAddress = encodeURIComponent(address);
@@ -47,6 +48,11 @@ function showPage(pageId) {
 }
 
 function showCategory(category) {
+    if (!isHandlingPopState) {
+        if (currentPage !== 'list' || currentCategory !== category) {
+            history.pushState({ page: 'list', category }, '', '');
+        }
+    }
     currentPage = 'list';
     currentCategory = category;
     currentBusiness = null;
@@ -79,6 +85,12 @@ function showCategory(category) {
 }
 
 function showBusinessDetail(business) {
+    if (!isHandlingPopState) {
+        if (currentPage !== 'detail' || currentBusiness?.name !== business.name) {
+            history.pushState({ page: 'detail', business }, '', '');
+        }
+    }
+
     currentPage = 'detail';
     currentBusiness = business;
 
@@ -147,6 +159,11 @@ function goBack() {
 }
 
 function goHome() {
+    if (!isHandlingPopState) {
+        if (currentPage !== 'home') {
+            history.pushState({ page: 'home' }, '', '');
+        }
+    }
     currentPage = 'home';
     currentCategory = null;
     currentBusiness = null;
@@ -177,3 +194,26 @@ document.addEventListener('touchend', function(e) {
     startX = null;
     startY = null;
 });
+
+window.addEventListener('popstate', (event) => {
+    isHandlingPopState = true;
+
+    if (event.state) {
+        const { page, category, business } = event.state;
+
+        if (page === 'home') {
+            goHome();
+        } else if (page === 'list' && category) {
+            showCategory(category);
+        } else if (page === 'detail' && business) {
+            showBusinessDetail(business);
+        }
+    } else {
+        goHome();
+    }
+
+    isHandlingPopState = false;
+});
+
+
+history.replaceState({ page: 'home' }, '', '');
