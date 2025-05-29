@@ -108,8 +108,8 @@ function showBusinessDetail(business) {
     detailHTML += `<div class="business-info"><strong>Endereço:</strong> <a href="#" onclick="openAddressInMaps('${business.address.replace(/'/g, "\\'")}')">${business.address}</a></div>`;
 }
 
-    if (business.phone) {
-        detailHTML += `<div class="business-info"><strong>Telefone:</strong> <a href="tel:${business.phone}">${business.phone}</a></div>`;
+   if (business.phone && business.phone.trim() !== '') {
+    detailHTML += `<div class="business-info"><strong>Telefone:</strong> <a href="tel:${business.phone}">${business.phone}</a></div>`;
     }
 
     if (business.hours) {
@@ -126,7 +126,7 @@ function showBusinessDetail(business) {
             detailHTML += `
                 <div class="business-item" onclick="showSubBusinessDetail('${sub.name}', '${sub.address}', '${sub.phone}', '${sub.hours || ''}', '${sub.imageUrl || ''}')">
                     <div class="business-title">${sub.name}</div>
-                    <div class="business-subtitle">${sub.address}</div>
+                    <div class="business-subtitle">${sub.subtitle}</div>
                 </div>
             `;
         });
@@ -143,7 +143,12 @@ function showSubBusinessDetail(name, address, phone, hours, imageUrl) {
     let detailHTML = `
         <div class="business-name">${name}</div>
         <div class="business-info"><strong>Endereço:</strong> <a href="#" onclick="openAddressInMaps('${address.replace(/'/g, "\\'")}')">${address}</a></div>
-        <div class="business-info"><strong>Telefone:</strong> <a href="tel:${phone}" style="color: blue; text-decoration: underline;">${phone}</a></div>
+        ${phone && phone.trim() !== '' ? `
+        <div class="business-info"><strong>Telefone:</strong> 
+            <a href="tel:${phone}" style="color: blue; text-decoration: underline;">${phone}</a>
+        </div>
+` : ''}
+
     `;
 
     if (hours && hours !== '') {
