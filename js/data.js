@@ -576,7 +576,7 @@ cabines: [
         subtitle: 'Clique para ver a Localização', 
         address: '3008 R. Cel. Spínola de Castro',
         phone: '',
-        hours: 'Das 7:30 até as 12:30',
+        hours: 'Segunda a Sexta: 8:00 - 18:00<br>Sabado: 08:00 - 12:00',
         imageUrl: 'img/cabines/coronel.jpg'
     },
 
@@ -585,7 +585,7 @@ cabines: [
         subtitle: 'Clique para ver a Localização', 
         address: '3002 R. Voluntários de São Paulo',
         phone: '',
-        hours: 'Horas',
+        hours: 'Segunda a Sexta: 8:00 - 16:30<br>Sabado: 08:00 - 12:00',
         imageUrl: 'img/cabines/rui.jpg'
     },
 
@@ -594,7 +594,7 @@ cabines: [
         subtitle: 'Clique para ver a Localização', 
         address: 'R. Antônio de Godoy, 3048 - Centro, São José do Rio Preto - SP, 15015-100',
         phone: '',
-        hours: 'Horas',
+        hours: 'Segunda a Sexta: 8:00 - 16:30<br>Sabado: 08:00 - 12:00',
         imageUrl: ''
     },
 
@@ -602,8 +602,8 @@ cabines: [
         name: 'FÓRUM', 
         subtitle: 'Clique para ver a Localização', 
         address: 'R.Bernadino de Campos, 3199 - centro',
-        phone: '179999999',
-        hours: 'Horas',
+        phone: '',
+        hours: 'Segunda a Sexta: 8:00 - 17:00<br>Sabado: 08:00 - 12:00',
         imageUrl: 'img/cabines/forum.jpg' 
     },
 
@@ -615,7 +615,7 @@ cabines: [
         subtitle: 'Clique para ver a Localização', 
         address: 'R. Voluntários, de São Paulo, 3697 - Vila Redentora',
         phone: '',
-        hours: 'Horas',
+        hours: 'Segunda a Sexta: 7:30 - 17:00<br>Sabado: 08:00 - 12:00',
         imageUrl: 'img/cabines/cardeal.jpg'
     },
     { 
@@ -623,7 +623,7 @@ cabines: [
         subtitle: 'Clique para ver a Localização', 
         address: 'R. Ondina, 518 - Vila Redentora',
         phone: '',
-        hours: 'Horas',
+        hours: 'Segunda a Sexta: 7:30 - 18:00<br>Sabado: 08:00 - 12:00',
         imageUrl: 'img/cabines/aldo.jpg'
     },
 
@@ -632,7 +632,7 @@ cabines: [
         subtitle: 'Clique para ver a Localização', 
         address: 'Rua Raul Silva, 454',
         phone: '',
-        hours: 'Horas',
+        hours: 'Segunda a Sexta: 8:00 - 16:30',
         imageUrl: 'img/cabines/raul.jpg'
     },
 
@@ -641,7 +641,7 @@ cabines: [
         subtitle: 'Clique para ver a Localização', 
         address: '3093 R. Generosa Bastosa',
         phone: '',
-        hours: 'Horas',
+        hours: 'Segunda a Sexta: 7:30 - 17:00<br>Sabado: 08:00 - 12:00',
         imageUrl: 'img/cabines/generosa.jpg'
     }
     
