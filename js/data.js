@@ -1,6 +1,6 @@
 const businessData = {
 centro: [
-    { name: 'Avenida Andaló', subtitle: 'PONTOS DE VENDAS', businesses: [
+    { name: 'Avenida Andaló', subtitle: 'Clique para ver os Pontos de Vendas disponiveis', businesses: [
        { 
             name: 'Doce lar', 
             address: 'Av. Dr. Alberto Andaló, 2964 - Centro, São José do Rio Preto - SP, 15015-000', 
@@ -10,8 +10,7 @@ centro: [
             imageUrl: 'https://lh3.googleusercontent.com/p/AF1QipOPY0i5j7o7babVEhrUCQZTQsYKlksrocAlnlDY=s1360-w1360-h1020-rw'
         },
     ]},
-
-    { name: 'Rua Tiradentes', subtitle: 'PONTOS DE VENDAS', businesses: [
+    { name: 'Rua Tiradentes', subtitle: 'Clique para ver os Pontos de Vendas disponiveis', businesses: [
         { 
             name: 'Espetinho Catedral', 
             address: 'R. Tiradentes, 3093 - Parque Industrial, São José do Rio Preto - SP, 15025-050', 
@@ -29,8 +28,7 @@ centro: [
             imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRhhpI5RfCenfnf6Wl6DOhEsG6MRB7y50OUA&s'
         },
     ]},
-
-    { name: 'Rua Coronel', subtitle: 'PONTOS DE VENDAS', businesses: [
+    { name: 'Rua Coronel', subtitle: 'Clique para ver os Pontos de Vendas disponiveis', businesses: [
         { 
             name: 'Gaúcho', 
             address: 'R. Cel. Spínola de Castro, 4496 - Centro, São José do Rio Preto - SP, 15015-500', 
@@ -97,7 +95,7 @@ centro: [
         },
 
     ]},
-    { name: 'Rua General Glicério', subtitle: 'PONTOS DE VENDAS', businesses: [
+    { name: 'Rua General Glicério', subtitle: 'Clique para ver os Pontos de Vendas disponiveis', businesses: [
           { 
             name: 'Rio Modas', 
             address: 'R. Gen. Glicério, 2636 - Centro, São José do Rio Preto - SP, 15015-400', 
