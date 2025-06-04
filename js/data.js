@@ -1,16 +1,79 @@
 const businessData = {
 centro: [
-    { name: 'Avenida Andaló', subtitle: 'Clique para ver os Pontos de Vendas disponiveis', businesses: [
+        { name: 'Rua Prudente de Moraes', subtitle: 'Clique para ver os Pontos de Vendas disponiveis', businesses: [
+
+        { 
+            
+            name: 'Tabacaria Beal', 
+            address: 'R. Bernardino de Campos, 2635 - Centro, São José do Rio Preto - SP, 15015-300', 
+            subtitle: 'Clique para ver a Localização',
+            phone: '(17) 3363-7156',
+            hours: 'Segunda a Sexta: 08:00 - 18:00<br>Sábado: 08:00 - 12:00',
+            imageUrl: 'img/pontodevenda/tabacaria.png'
+        },
+  
+    ]},
+    { name: 'Rua Pedro Amaral', subtitle: 'Clique para ver os Pontos de Vendas disponiveis', businesses: [
+
+        { 
+            
+            name: 'Lee I', 
+            address: 'R. Pedro Amaral, 3021', 
+            subtitle: 'Clique para ver a Localização',
+            phone: '(17) 3234-5944',
+            hours: 'Segunda a Sexta: 08:00 - 18:00<br>Sábado: 08:00 - 12:00',
+            imageUrl: 'img/pontodevenda/lee1.png'
+        },
+        { 
+            
+            name: 'Lee II', 
+            address: 'R. Pedro Amaral, 3021', 
+            subtitle: 'Clique para ver a Localização',
+            phone: '(17) 3234-5944',
+            hours: 'Segunda a Sexta: 08:00 - 18:00<br>Sábado: 08:00 - 12:00',
+            imageUrl: 'img/pontodevenda/lee2.png'
+        },
+        { 
+            
+            name: 'Restaurante e Lanchonete Copacabana', 
+            address: 'R. Pedro Amaral, 2909 - Centro, São José do Rio Preto - SP, 15010-040', 
+            subtitle: 'Clique para ver a Localização',
+            phone: '(17) 3233-6621',
+            hours: 'Segunda a Sexta: 07:00 - 20:00<br>Sábado: 07:00 - 20:00',
+            imageUrl: 'img/pontodevenda/copacabana.png'
+        },
+
        { 
-            name: 'Doce lar', 
+   
+            name: 'Laís Doce lar', 
+            address: 'R. Pedro Amaral, 2938 - Centro, São José do Rio Preto - SP, 15010-010', 
+            subtitle: 'Clique para ver a Localização',
+            phone: '(17) 99667-6880',
+            hours: 'Segunda a Sexta: 07:30 - 18:00<br>Sábado: 07:30 - 14:00',
+            imageUrl: 'https://lh3.googleusercontent.com/proxy/PaYQJ5l_h-jocOywP_58mUbd2WcmQAZ8bVGQpmogMnvcnc_RYeBIDPcKkzFoV4DDBj_q18OzeuAITu9BrIuhwHeyu0BRvtXM3FXdHqS9qmWIlSJxd2JryP0F89K2Z4FzEkt5ek85jalYOFe9L_sKzXXf7OzV1thEKKcYCA=s1360-w1360-h1020-rw'
+        },
+
+        { 
+            name: 'Distribuidora Formosa', 
             address: 'Av. Dr. Alberto Andaló, 2964 - Centro, São José do Rio Preto - SP, 15015-000', 
             subtitle: 'Clique para ver a Localização',
             phone: '(17) 3232-8399',
             hours: 'Segunda a Sexta: 08:30 - 18:00<br>Sábado: 09:00 - 13:00',
-            imageUrl: 'https://lh3.googleusercontent.com/p/AF1QipOPY0i5j7o7babVEhrUCQZTQsYKlksrocAlnlDY=s1360-w1360-h1020-rw'
+            imageUrl: ''
         },
+
     ]},
     { name: 'Rua Tiradentes', subtitle: 'Clique para ver os Pontos de Vendas disponiveis', businesses: [
+
+        { 
+          
+            name: 'Lanchonete Riviera', 
+            address: 'R. Tiradentes, 2863 - Centro, São José do Rio Preto - SP, 15010-030', 
+            subtitle: 'Clique para ver a Localização',
+            phone: '(17) 3222-5359',
+            hours: 'Segunda a Sexta: 06:30 - 19:00<br>Sábado: 06:30 - 17:00',
+            imageUrl: 'data:image/jpeg;base64,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'
+        },
         { 
             name: 'Espetinho Catedral', 
             address: 'R. Tiradentes, 3093 - Parque Industrial, São José do Rio Preto - SP, 15025-050', 
@@ -28,14 +91,7 @@ centro: [
         },
     ]},
     { name: 'Rua Coronel', subtitle: 'Clique para ver os Pontos de Vendas disponiveis', businesses: [
-        { 
-            name: 'Gaúcho', 
-            address: 'R. Cel. Spínola de Castro, 4496 - Centro, São José do Rio Preto - SP, 15015-500', 
-            subtitle: 'Clique para ver a Localização',
-            phone: '(17) 98199-1229',
-            hours: 'Segunda a Sexta: 17:00 - 23:00<br>Sábado: 17:00 - 01:00',
-            imageUrl: 'https://lh3.googleusercontent.com/p/AF1QipMBAIQWjNh4AcusPk6g_T_ToihsdfrjMphwee8a=w325-h218-n-k-no'
-        },
+      
         { 
             name: 'Reino Motos', 
             address: 'R. Cel. Spínola de Castro, 2744 - Centro, São José do Rio Preto - SP, 15015-500', 
@@ -83,14 +139,6 @@ centro: [
             phone: '(17) 3121-6330',
             hours: 'Segunda a Sexta: 08:00 - 17:00',
             imageUrl: 'https://lh3.googleusercontent.com/proxy/mL7lknGxM-yiWGuy2izCi-9vbr7Qr7Tf9bLPP2Qs5fhYJCzo9HxMwQkZf2RIM2j_gRUpxDECHVQEDzPsFf982WrcN8I6kmIkeefiIPO6cBfpriK_x0f1APdQMTx5Cdqqz211BPh39SaC1NPIA6w9HIWHBA0sWP_Q_JCgBg=s1360-w1360-h1020-rw'
-        },
-        { 
-            name: 'Estacionamento setparque 2', 
-            subtitle: 'Clique para ver a Localização',
-            address: '', 
-            phone: '',
-            hours: '',
-            imageUrl: ''
         },
 
     ]},
@@ -145,14 +193,7 @@ centro: [
             hours: 'Segunda a Sexta: 06:00 - 19:00<br>Sábado: 06:00 - 18:30<br>Domingo: 06:00 - 12:00',
             imageUrl: 'https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqI2vTLza06tw9OPsfieSXpD91mzwko-8CCfRug7O0gPdB_zkpnz5L1wyDJZYWouPE2Fnfe0oS7alTmcODd6M4HV_xkPYFXpbSciC3MPxtuMLYZc9ceLJtzMjVQZw6nUwzrWOTWFQ=s1360-w1360-h1020-rw'
         },
-        { 
-            name: 'Pastelaria Palmeiras', 
-            address: 'R. Antônio de Godoy, 3048 - Box 5 - Centro, São José do Rio Preto - SP, 15015-100', 
-            subtitle: 'Clique para ver a Localização',
-            phone: '(17) 99140-0893',
-            hours: 'Segunda a Sexta: 07:00 - 18:00<br>Sábado: 07:00 - 16:00<br>Domingo: 07:00 - 14:00',
-            imageUrl: 'https://lh3.googleusercontent.com/gps-cs-s/AC9h4npvKglIOaqmFAa5gi643hcTH6ubV9WUrAz9WzSPLggGz-3Zi4codv-CQ1P-y87QWVNkZCrKm_jzGpqJbIB8baOlDyHsOG3flOEQvJoVpWKDaJ1J7TTXqJlQ-FKvk1B9cALtubM5Mw=w243-h174-n-k-no-nu', 
-        },
+   
         { 
             name: 'Meire Maiuny', 
             address: 'R. Antônio de Godoy, 2979 - Centro, São José do Rio Preto - SP, 15015-000', 
@@ -196,6 +237,16 @@ centro: [
             hours: 'Segunda a Sexta: 08:00 - 18:00<br>Sábado: 08:00 - 13:00',
             imageUrl: 'https://lh3.googleusercontent.com/p/AF1QipNBoUMWKBJ9ENinla5vIS9vH8uL0xN_3B97k6bV=s1360-w1360-h1020-rw'
         },
+
+          { 
+            
+            name: 'Bar das Meninas', 
+            address: 'R. XV de Novembro, 2929 - Centro, São José do Rio Preto - SP, 15015-110', 
+            subtitle: 'Clique para ver a Localização',
+            phone: '(17) 98130-0918',
+            hours: 'Segunda a Sexta: 07:00 - 18:30<br>Sábado: 07:00 - 14:30',
+            imageUrl: 'https://lh3.googleusercontent.com/gps-proxy/ALd4DhF1FF9h55vXSKr0nJpDn1ua90uuW9qJ-Ux0X3vSU8-3WwC48sW3H3rLb8VYCRU3hWUyiM_absadX4cWdHS1NgYUGHzlhN2F4ng_RybWoffNJOwG6vXdebdLXBN43SAy8eYVIesFdebCYrKjU-uEvOPvGjSe_tTfkdhhmRWpFjirOZwZsjO5NUaxBMzKQht5MoiFDA=w325-h218-n-k-no'
+        },
         { 
             name: 'Otica Vivalux Ltda', 
             address: 'R. XV de Novembro, 3192 - Centro - Centro, São José do Rio Preto - SP, 15015-110', 
@@ -203,9 +254,27 @@ centro: [
             phone: '(17) 99117-8771',
             hours: 'Segunda a Sexta: 08:00 - 18:00<br>Sábado: 08:00 - 13:00',
             imageUrl: 'https://lh3.googleusercontent.com/proxy/JRJEg_TFFlW09mJXGlQ2ZZpDWIA_tHnCvrucnHacaPU50Aeik2Ra0cM9HDzz7BDetKsIxrO4hhkoWJjeo6Vkc99Sv7ERbmGmKIqlMzOO6N7NdvATl4ZdF9ngUdyr_2VmXeub_-zkLIi2LxY54ln6ily2gKIt2NZ9QG1hzg=s1360-w1360-h1020-rw'
+        },
+        { 
+            name: 'Essencia Modas', 
+            address: 'R. XV de Novembro, 3597 - Centro, São José do Rio Preto - SP, 15015-110', 
+            subtitle: 'Clique para ver a Localização',
+            phone: '(17) 98151-5109',
+            hours: 'Segunda a Sexta: 09:00 - 18:00<br>Sábado: 09:00 - 12:00',
+            imageUrl: 'data:image/jpeg;base64,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'
         }
+
+
     ]},
     { name: 'Rua Marechal', subtitle: 'Clique para ver os Pontos de Vendas disponiveis', businesses: [
+        { 
+            
+            name: 'Casa Lotérica', 
+            address: 'Rua Marechal Deodoro da Fonseca, 2931 - Distrito de Talhado, São José do Rio Preto - SP, 15102-006', 
+            subtitle: 'Clique para ver a Localização',
+            hours: 'Segunda a Sexta: 07:00 - 17:00<br>Sábado: 08:00 - 13:00',
+            imageUrl: 'https://lh3.googleusercontent.com/gps-cs-s/AC9h4nq1TfhEyY9HHP3aqFV4BTaNHIv-FJU2pVEAs_D35kstCuNyjs0vSxoApWZ07-2TKvnUK8TcdBXkvbJiNFHIlKVR2uFzgTw4Mn5OcKkgc6cCCYHF-J4tj9aH5SHSKJk0FdP8xq5x=s1360-w1360-h1020-rw'
+        },
         { 
             name: 'Marrom Café', 
             address: 'Rua Marechal Deodoro da Fonseca, 3123 - Centro, São José do Rio Preto - SP, 15010-070', 
@@ -260,14 +329,7 @@ centro: [
         }
     ]},
     { name: 'Rua Bernadino de Campo', subtitle: 'Clique para ver os Pontos de Vendas disponiveis', businesses: [
-        { 
-            name: 'Correio', 
-            address: 'R. Bernardino de Campos, 3180- Centro', 
-            subtitle: 'Clique para ver a Localização',
-            phone: '(17) 3214-4178',
-            hours: 'Segunda a Sexta: 08:00 - 17:00<br>Sábado: 08:00 - 13:00',
-            imageUrl: ''
-        },
+      
         { 
             name: 'Vento Nobre', 
             address: 'R. Bernardino de Campos, 4093 - Centro, São José do Rio Preto - SP, 15020', 
@@ -276,14 +338,7 @@ centro: [
             hours: '',
             imageUrl: 'https://vnequipamentos.spotway.com.br/imagens/empresas/6393-vnequipamentos/fotos/6357452-vnequipamentos-930x.webp'
         },
-        { 
-            name: 'Lee I', 
-            address: 'R. Bernardino de Campos, 2635 - Centro, São José do Rio Preto - SP, 15015-300', 
-            subtitle: 'Clique para ver a Localização',
-            phone: '(17) 3363-7156',
-            hours: 'Segunda a Sexta: 08:00 - 18:00<br>Sábado: 08:00 - 12:00',
-            imageUrl: 'https://lh3.googleusercontent.com/gps-cs-s/AC9h4npds6rCyVhRVJyGBnmf2u8ftRbAsuWMYZdbnIC6OL7VOQW2wt2H7mWXe6spahSKA4hfZivkMjCrZjrZiw_IQ5lmHqca64RgUc_D764PhUJNinitJrT3PG-GB3Frx4WH7TWdNpY=s1360-w1360-h1020-rw'
-        },
+ 
         { 
             name: 'Sebo Livraria', 
             address: ' R. Bernardino de Campos, 3371 - Centro, São José do Rio Preto - SP, 15015-300', 
@@ -293,14 +348,7 @@ centro: [
             imageUrl: 'https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrJqgaOsNVatf0fXirWa8sqGVzn2EbwlHOLq8Tjcxipx36FJe48274rUXI7RDfA-7mMhRJ-ibngoQOdfvCpPZLe_vqCE80fq45sTxTmEf3ilsdgEeIV7jK33a22-aKoSovYgN30WQ=s1360-w1360-h1020-rw'
         },
         
-        { 
-            name: 'Casa Lotérica', 
-            address: 'R. Bernardino de Campos, 2623 - Centro, São José do Rio Preto - SP, 15015-300', 
-            subtitle: 'Clique para ver a Localização',
-            phone: '(17) 3233-9416',
-            hours: 'Segunda a Sexta: 08:00 - 18:00<br>Sábado: 08:00 - 13:00',
-            imageUrl: 'img/pontodevenda/loterica.png'
-        },
+   
         { 
             name: 'Café Conte', 
             address: 'R. Bernardino de Campos, 3149 - Centro, São José do Rio Preto - SP, 15015-300', 
@@ -330,6 +378,14 @@ centro: [
     ]},
     { name: 'Rua Voluntários São Paulo', subtitle: 'Clique para ver os Pontos de Vendas disponiveis', businesses: [
         { 
+            
+            name: 'Patelaria do Chinês', 
+            address: 'R. Voluntários de São Paulo, 2619 - Centro, São José do Rio Preto - SP, 15015-200', 
+            subtitle: 'Clique para ver a Localização',
+            hours: 'Segunda a Sexta: 07:00 - 18:00<br>Sábado: 07:00 - 08:00',
+            imageUrl: 'img/pontodevenda/p.chines.png'
+        },
+        { 
             name: 'Senadinho Café', 
             address: 'R. Voluntários de São Paulo, 3191 - Centro, São José do Rio Preto - SP, 15015-200', 
             subtitle: 'Clique para ver a Localização',
@@ -353,6 +409,8 @@ centro: [
             hours: 'Segunda a Sexta: 08:00 - 23:00<br>Sábado: 08:00 - 16:00',
             imageUrl: 'https://lh3.googleusercontent.com/gps-cs-s/AC9h4noWOOBG55TqyDMNgX8PqAtlbRAuCyRiiWQOXbNJi4N6nofuPsYrZZYiB-pzWJA1BxMrA_jS14U4AtyuyXS4nvhz5tCTKnguamW6ZA-eu8nXTgk2EEZvzNgC5GUORYes-0FrGH1g=s1360-w1360-h1020-rw'
         },
+
+
 
         { 
             name: 'Abescolor', 
@@ -399,6 +457,15 @@ centro: [
         }
     ]},
     { name: 'Rua Jorge Tibiriça', subtitle: 'Clique para ver os Pontos de Vendas disponiveis', businesses: [
+        { 
+            //ALTERRAR
+            name: 'Pastelaria Palmeiras', 
+            address: 'R. Antônio de Godoy, 3048 - Box 5 - Centro, São José do Rio Preto - SP, 15015-100', 
+            subtitle: 'Clique para ver a Localização',
+            phone: '(17) 99140-0893',
+            hours: 'Segunda a Sexta: 07:00 - 18:00<br>Sábado: 07:00 - 16:00<br>Domingo: 07:00 - 14:00',
+            imageUrl: 'https://lh3.googleusercontent.com/gps-cs-s/AC9h4npvKglIOaqmFAa5gi643hcTH6ubV9WUrAz9WzSPLggGz-3Zi4codv-CQ1P-y87QWVNkZCrKm_jzGpqJbIB8baOlDyHsOG3flOEQvJoVpWKDaJ1J7TTXqJlQ-FKvk1B9cALtubM5Mw=w243-h174-n-k-no-nu', 
+        },
 
         { 
             name: 'Ohtica', 
@@ -514,6 +581,15 @@ redentora: [
     ]},
     { name: 'Rua Jaci', subtitle: 'Clique para ver os Pontos de Vendas disponiveis', businesses: [
         { 
+            
+            name: 'Um Brunch', 
+            address: 'R. Jaci, 3320 - Vila Redentora', 
+            subtitle: 'Clique para ver a Localização',
+            phone: ' (17) 99212-1931',
+            hours: 'terça a sabado: 09:00 - 19:00',
+            imageUrl: 'img/pontodevenda/1brunch.png'
+        },
+        { 
             name: 'Olho Clínica e Cirurgia', 
             address: 'R. Jaci, 3447 - Vila Redentora, São José do Rio Preto - SP, 15015-810', 
             subtitle: 'Clique para ver a Localização',
@@ -543,14 +619,16 @@ redentora: [
         }
     ]},
     { name: 'Rua Antonio de Godoy', subtitle: 'Clique para ver os Pontos de Vendas disponiveis', businesses: [
-        { 
-            name: 'Um Brunch', 
-            address: ' R. Antônio de Godoy, 3899 - Vila Redentora, São José do Rio Preto - SP, 15015-000', 
+          { 
+            
+            name: 'Onlog', 
+            address: 'On Log - R. Antônio de Godoy, 3491 - Vila Redentora, São José do Rio Preto - SP, 15015-100', 
             subtitle: 'Clique para ver a Localização',
-            phone: ' (17) 99212-1931',
-            hours: 'terça a sabado: 09:00 - 19:00',
-            imageUrl: 'https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqZNu9xJqU_rz2y3X4nuIq1ONgCxJpwO2F51OqMGxWCsYXz4sUQJqZeWHJx8YKPXzIfJYEmURFAHxzs4NkTBUSoOmfcgDRxX2uK69ozsCpseIDadao61xEcZ45p1ns_ICMjlVlVrw=s1360-w1360-h1020-rw'
+            phone: '(17) 99752-8693',
+            hours: 'Segunda a Sexta: 08:00 - 17:00<br>Sábado: 08:00 - 13:00',
+            imageUrl: 'https://lh3.googleusercontent.com/p/AF1QipOw-nRKnNCt02_RgO9QpZ9uDycEFP9-J2jHACh4=s1360-w1360-h1020-rw'
         },
+  
         { 
             name: 'Eliana Guidotti', 
             address: 'R. Antônio de Godoy, n 3671 - Vila Redentora, São José do Rio Preto - SP, 15015-100', 
