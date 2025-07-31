@@ -6,7 +6,8 @@ let isHandlingPopState = false;
 const categoryTitles = {
     centro: 'SETOR CENTRO',
     redentora: 'SETOR REDENTORA',
-    cabines: 'CABINES'
+    cabines: 'CABINES',
+    parquimetros: 'PARQUIMETROS'
 };
 
 function openAddressInMaps(address) {
