@@ -137,23 +137,31 @@ body {
     background-position: center;
 }
 
-
+/* Layout de grade 2x2 para a tela home */
 .category-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
     margin-bottom: 30px;
+    height: auto;
 }
 
 .category-card {
     background: white;
     border-radius: 16px;
-    padding: 30px 20px;
+    padding: 25px 15px;
     text-align: center;
     box-shadow: 0 6px 20px rgba(0,0,0,0.08);
     cursor: pointer;
     transition: all 0.3s ease;
     border: 2px solid transparent;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
 }
 
 .category-card:hover {
@@ -163,8 +171,8 @@ body {
 }
 
 .category-icon {
-    font-size: 48px;
-    margin-bottom: 15px;
+    font-size: 40px;
+    margin-bottom: 12px;
     color: #1e3a5f;
     display: flex;
     align-items: center;
@@ -172,14 +180,38 @@ body {
 }
 
 .category-icon svg {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
 }
 
 .category-name {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     color: #2c3e50;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 400px) {
+    .category-card {
+        padding: 20px 10px;
+        min-height: 120px;
+    }
+    
+    .category-icon {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    
+    .category-icon svg {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .category-name {
+        font-size: 12px;
+    }
 }
 
 .business-list {
